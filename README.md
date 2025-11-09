@@ -30,9 +30,15 @@
 
 ## Some k8s cmd using in this project
  Get pods/services/node/deployments: kubectl get {pods/services/node/deployments} -o wide
+
  Get detailed: kubectl describe {pods/services}
+
  Get services: kubectl get services
+
  Deploy: kubectl apply -f deployment.yaml
+
  Delete deployment: kubectl delete deployment {deployment-name} -n {namespace}
+
  Get deployment status: kubectl rollout status {deployment-name}
+ 
  Get deployment log: kubectl logs {deployment-id}
