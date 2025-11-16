@@ -42,3 +42,5 @@
  Get deployment status: kubectl rollout status {deployment-name}
  
  Get deployment log: kubectl logs {deployment-id}
+
+ Delete pod: kubectl delete -n {namespace} pod {pod-name}
