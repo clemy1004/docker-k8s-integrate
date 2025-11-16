@@ -27,3 +27,8 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "200m"
+        volumeMounts:
+        - name: todo-app-db
+          mountPath: /etc/todos/
+      volumes:
+      - name: todo-app-db
