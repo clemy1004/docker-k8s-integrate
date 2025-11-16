@@ -1,7 +1,6 @@
-FROM node:10-alpine AS service
+FROM node:10-alpine
 WORKDIR /app
-COPY . .
+COPY package.json ./
 RUN yarn install --production
-CMD ["node", "app/src/index.js"]
-
-FROM mysql:5.7 AS database
+COPY app/ ./
+CMD ["node", "src/index.js"]
